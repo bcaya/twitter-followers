@@ -6,7 +6,7 @@ class Api::FollowersController < ApplicationController
       {
         id: follower.id, 
         name: follower.name, 
-        img: folower.profile_image_url.to_s
+        img: follower.profile_image_url.to_s
       }
     end 
 
@@ -20,5 +20,6 @@ class Api::FollowersController < ApplicationController
         c.consumer_secret = ENV['CONSUMER_SECRET']
         c.access_token = ENV['ACCESS_TOKEN']
         c.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
-    end 
+    end
+    end  
 end
